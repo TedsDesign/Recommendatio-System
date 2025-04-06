@@ -1,0 +1,183 @@
+.head-line {
+  color: #0c0a06;
+
+  padding: 10px;
+}
+
+/* ProductCard.css */
+.profile-card {
+  border: 2px solid #e0e0e000;
+  border-radius: 12px;
+  padding: 10px;
+  margin-left: 10px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 95%;
+  text-align: center;
+  justify-content: center;
+}
+
+.heading {
+  padding: 10px;
+}
+.personal-data {
+  padding: 20px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+
+.product-card {
+  border: 1px solid #e0e0e000;
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 80%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.366), 0 6px 6px rgba(0, 0, 0, 0.531);
+}
+
+.product-header {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.category {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.product-details {
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #2a6496;
+}
+
+.rating {
+  color: #ffa41c;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.buy-button {
+  background-color: #ffa41c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buy-button:hover {
+  background-color: #ff8f00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Intrested button */
+
+.interest-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.interest-button:hover {
+  background-color: #e0e0e0;
+}
+
+.interest-button.interested {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+/* Hovering Detials */
+.product-card {
+  /* Your existing styles */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 300px; /* Fixed height for consistent hover */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover overlay content */
+.product-card {
+  /* Your existing card styles */
+  position: relative;
+  transition: all 0.3s ease;
+  margin-bottom: 0; /* Remove default margin */
+}
+
+/* Container for both card and hover content */
+.product-card-wrapper {
+  position: relative;
+  margin-bottom: 20px; /* Space for hover content */
+}
+
+/* Hidden content that appears on hover */
+.hover-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+  background: #f8f9fa;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  width: 83%;
+}
+
+.product-card-wrapper:hover .hover-content {
+  max-height: 200px; /* Adjust based on your content */
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* Card lift effect on hover */
+.product-card-wrapper:hover .product-card {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px 8px;
+}
+
+/* Hover content styling */
+.hover-details {
+  display: grid;
+
+  gap: 10px;
+  font-size: 14px;
+}
+
+.hover-details p {
+  margin: 5px 0;
+}

@@ -1,0 +1,26 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.dashboard {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.action-button {
+  display: inline;
+
+  margin: 10px;
+  padding: 8px 12px;
+
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.action-button:hover {
+  background-color: #2b9b32;
+}
